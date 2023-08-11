@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nangcao.css">
+</head>
+
+<body>
+    <h1>Rikkei Academy</h1>
+    <div class="container">
+        <form>
+            <div>
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" placeholder="vui lòng nhập tên">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"  placeholder="vui lòng nhập email">
+
+                <label for="phone">Số diện thoại:</label>
+                <input type="text" id="phone"  placeholder="vui lòng nhập số điện thoại">
+
+                <label for="address">Quê quán:</label>
+                <input type="text" id="address"  placeholder="vui lòng nhập địa chỉ quê quán">
+            </div>
+            <div class="box3">
+                <label for="gender">Giới tính:</label>
+                <select id="gender" required>
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                </select>
+            </div>
+            <button type="button" onclick="saveStudent()">Lưu lại</button>
+        </form>
+
+        <div class="box">
+            <h1 style="text-align: center;">Danh sách học viên</h1>
+            <label>Tìm kiếm tên học viên</label>
+            <input id="search" style="width: 400px;" type="text" name="students">
+            <button  type="button" onclick="searchStudent()" >Search</button>
+
+            <table border="1" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Họ tên</th>
+                        <th>Email</th>
+                        <th>Điện Thoại</th>
+                        <th>Địa Chỉ</th>
+                        <th>Gender</th>
+                        <th colspan="2">Hành Động</th>
+                        <th>
+                            <button type="button" onclick="sapxepStudent()">sắp xếp(alpha b)</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>rikkei</td>
+                        <td>rikkei@gmail.com</td>
+                        <td>0823868888</td>
+                        <td>Hà Nội</td>
+                        <td>Nam</td>
+                        <td>
+                            <button id="editpeole">edit</button>
+                        </td>
+                        <td>
+                            <button id="deletepeople">delete</button>
+                        </td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td>2</td>
+                        <td>rikkei</td>
+                        <td>rikkei@gmail.com</td>
+                        <td>0823868888</td>
+                        <td>Hà Nội</td>
+                        <td>Nam</td>
+                        <td>
+                            <button id="editpeole">edit</button>
+                        </td>
+                        <td>
+                            <button id="deletepeople">delete</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <script src="nangcao.js"></script>
+</body>
+
+</html>
